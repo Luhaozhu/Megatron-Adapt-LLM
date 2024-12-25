@@ -29,6 +29,10 @@ from typing import Union
 import megatron
 
 
+# import debugpy
+# debugpy.connect(('127.0.0.1', 5577))
+
+
 def model_provider(pre_process=True, post_process=True) -> Union[GPTModel, megatron.legacy.model.GPTModel]:
     """Builds the model.
 

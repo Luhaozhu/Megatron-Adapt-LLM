@@ -311,6 +311,9 @@ class ModelParallelConfig:
     cpu_offloading_num_layers: int = 0
     """Tells the number of transformer layers for which activations has to be offloaded."""
 
+    cpu_offloading_model_layers: int = 0
+    """Tells the number of transformer layers for which activations has to be offloaded."""
+
     _cpu_offloading_context: Optional[ContextManager] = (
         None
         # Used for internal use only, not to be set by a user.

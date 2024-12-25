@@ -87,6 +87,9 @@ import sys
 # }
 # - "done"
 
+# import debugpy
+# debugpy.connect(('127.0.0.1', 5577))
+
 def load_plugin(plugin_type, name):
     module_name = f"{plugin_type}_{name}"
     try:
